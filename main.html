@@ -63,7 +63,9 @@
           <div class="flex items-center">
             <img src="assets/Group.png" alt="" />
             <div>
-              <p class="text-2xl font-bold">$ <span>45000</span></p>
+              <p class="text-2xl font-bold">
+                $ <span id="current_amount">45000</span>
+              </p>
               <p class="text-blur_text">Available Balance</p>
             </div>
           </div>
@@ -137,7 +139,10 @@
                     >Select A Bank</span
                   >
                 </label>
-                <select class="select select-bordered bg-bg_color rounded-3xl">
+                <select
+                  id="bank"
+                  class="select select-bordered bg-bg_color rounded-3xl"
+                >
                   <option disabled selected>Select Bank</option>
                   <option>BRAC Bank</option>
                   <option>Trust Bank</option>
@@ -152,7 +157,6 @@
                   >
                 </label>
                 <input
-                  id="Mobile_num"
                   value="01914561456"
                   type="number"
                   placeholder="Enter your bank number"
@@ -167,7 +171,7 @@
                   >
                 </label>
                 <input
-                  id="pin"
+                  id="amount_add"
                   type="number"
                   placeholder="Amount"
                   class="input input-bordered bg-bg_color rounded-3xl"
@@ -181,7 +185,7 @@
                   >
                 </label>
                 <input
-                  id="pin"
+                  id="pin_add"
                   value="1414"
                   type="number"
                   placeholder="Enter 4 Digit Pin"
@@ -191,7 +195,7 @@
               </div>
               <div class="form-control mt-6">
                 <button
-                  id="login_btn"
+                  id="add_money_btn"
                   class="btn btn-primary text-xl rounded-3xl bg-blue-600 border-none text-white"
                 >
                   Add Money
@@ -212,7 +216,7 @@
                   >
                 </label>
                 <input
-                  id="Mobile_num"
+                  id="agent_num"
                   value="01914561456"
                   type="number"
                   placeholder="Enter your agent number"
@@ -227,7 +231,7 @@
                   >
                 </label>
                 <input
-                  id="pin"
+                  id="amount_cashOut"
                   type="number"
                   placeholder="Amount to withdraw"
                   class="input input-bordered bg-bg_color rounded-3xl"
@@ -241,7 +245,7 @@
                   >
                 </label>
                 <input
-                  id="pin"
+                  id="pin_cashOut"
                   value="1414"
                   type="number"
                   placeholder="Enter 4 Digit Pin"
@@ -251,7 +255,7 @@
               </div>
               <div class="form-control mt-6">
                 <button
-                  id="login_btn"
+                  id="cashOut_btn"
                   class="btn btn-primary text-xl rounded-3xl bg-blue-600 border-none text-white"
                 >
                   Withdraw Money
@@ -262,5 +266,7 @@
         </section>
       </main>
     </div>
+    <script src="java/addMoney.js"></script>
+    <script src="java/cashOut.js"></script>
   </body>
 </html>
