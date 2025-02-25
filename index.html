@@ -14,6 +14,14 @@
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+    <!-- outfit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Adding Extra Things -->
     <script>
       tailwind.config = {
@@ -25,16 +33,17 @@
             fontFamily: {
               sora: ["Sora", "serif"],
               ADLaM: ["ADLaM Display", "serif"],
+              outfit: ["Outfit", "serif"],
             },
             padding: {
-              "1/4vw": "10vw",
+              "1/4vw": "6vw",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-stone-300 text-base">
+  <body class="bg-stone-300 text-base font-outfit">
     <section class="h-screen bg-bg_color max-w-md mx-auto">
       <div class="flex flex-col items-center relative pt-1/4vw">
         <img class="" src="assets/bg.png" alt="" />

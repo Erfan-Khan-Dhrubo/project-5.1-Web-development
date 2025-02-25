@@ -14,6 +14,14 @@
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+    <!-- outfit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Adding Extra Things -->
     <script>
       tailwind.config = {
@@ -22,10 +30,12 @@
             colors: {
               bg_color: "#F4F5F7",
               blur_text: "rgba(8, 8, 8, 0.5)",
+              blur_text2: "rgba(8, 8, 8, 0.7)",
+              bor_cl: "#EAEAEA",
               white: "#FFFFFF",
             },
             fontFamily: {
-              sora: ["Sora", "serif"],
+              outfit: ["Outfit", "serif"],
               ADLaM: ["ADLaM Display", "serif"],
             },
             padding: {
@@ -44,7 +54,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-stone-300 text-base">
+  <body class="bg-stone-300 text-base font-outfit">
     <div class="min-h-screen bg-bg_color max-w-md mx-auto">
       <header class="border-b border-b-blur_text bg-white">
         <nav class="w-9/10 mx-auto flex justify-between items-center py-4">
@@ -55,7 +65,7 @@
               <p class="text-blur_text">Available Balance</p>
             </div>
           </div>
-          <button class="btn text-blur_text border-blur_text bg-white">
+          <button class="btn text-blur_text border-bor_cl bg-white">
             <i
               class="fa-solid fa-arrow-right-from-bracket"
               style="transform: rotate(180deg)"
@@ -64,7 +74,53 @@
           </button>
         </nav>
       </header>
-      <section></section>
+      <section class="bg-white py-12">
+        <div class="w-9/10 mx-auto flex flex-col gap-6">
+          <h2 class="text-2xl font-bold">🔥 Welcome to Payooo!</h2>
+          <p class="text-blur_text">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+          <div class="grid grid-cols-3 gap-4">
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/wallet1.png" alt="" />
+              <p class="text-blur_text2">Add Money</p>
+            </button>
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/send1.png" alt="" />
+              <p class="text-blur_text2">Cash Out</p>
+            </button>
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/money1.png" alt="" />
+              <p class="text-blur_text2">Transfer Money</p>
+            </button>
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/bonus1.png" alt="" />
+              <p class="text-blur_text2">Get Bonus</p>
+            </button>
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/purse1.png" alt="" />
+              <p class="text-blur_text2 font-outfit">Pay Bill</p>
+            </button>
+            <button
+              class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
+            >
+              <img src="assets/transaction1.png" alt="" />
+              <p class="text-blur_text2">Transactions</p>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
