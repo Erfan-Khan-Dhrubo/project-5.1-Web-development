@@ -31,6 +31,7 @@
               bg_color: "#F4F5F7",
               blur_text: "rgba(8, 8, 8, 0.5)",
               blur_text2: "rgba(8, 8, 8, 0.7)",
+              blur_text3: "rgba(8, 8, 8, 0.9)",
               bor_cl: "#EAEAEA",
               white: "#FFFFFF",
             },
@@ -56,6 +57,7 @@
   </head>
   <body class="bg-stone-300 text-base font-outfit">
     <div class="min-h-screen bg-bg_color max-w-md mx-auto">
+      <!-- Navbar Section -->
       <header class="border-b border-b-blur_text bg-white">
         <nav class="w-9/10 mx-auto flex justify-between items-center py-4">
           <div class="flex items-center">
@@ -74,6 +76,7 @@
           </button>
         </nav>
       </header>
+      <!-- Banner Section -->
       <section class="bg-white py-12">
         <div class="w-9/10 mx-auto flex flex-col gap-6">
           <h2 class="text-2xl font-bold">🔥 Welcome to Payooo!</h2>
@@ -121,6 +124,143 @@
           </div>
         </div>
       </section>
+
+      <main>
+        <!-- Add Money Section -->
+        <section class="text-blur_text w-9/10 mx-auto py-12">
+          <h2 class="font-bold text-xl py-4 text-blur_text3">Add Money</h2>
+          <div class="card bg-base-100 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Select A Bank</span
+                  >
+                </label>
+                <select class="select select-bordered bg-bg_color rounded-3xl">
+                  <option disabled selected>Select Bank</option>
+                  <option>BRAC Bank</option>
+                  <option>Trust Bank</option>
+                  <option>Union Bank</option>
+                  <option>Agrani Bank</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Bank Account Number</span
+                  >
+                </label>
+                <input
+                  id="Mobile_num"
+                  value="01914561456"
+                  type="number"
+                  placeholder="Enter your bank number"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Amount to Add</span
+                  >
+                </label>
+                <input
+                  id="pin"
+                  type="number"
+                  placeholder="Amount"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Pin Number</span
+                  >
+                </label>
+                <input
+                  id="pin"
+                  value="1414"
+                  type="number"
+                  placeholder="Enter 4 Digit Pin"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button
+                  id="login_btn"
+                  class="btn btn-primary text-xl rounded-3xl bg-blue-600 border-none text-white"
+                >
+                  Add Money
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- Cash Out Section -->
+        <section class="text-blur_text w-9/10 mx-auto py-12">
+          <h2 class="font-bold text-xl py-4 text-blur_text3">Cash Out</h2>
+          <div class="card bg-base-100 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Agent Number</span
+                  >
+                </label>
+                <input
+                  id="Mobile_num"
+                  value="01914561456"
+                  type="number"
+                  placeholder="Enter your agent number"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Amount</span
+                  >
+                </label>
+                <input
+                  id="pin"
+                  type="number"
+                  placeholder="Amount to withdraw"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium text-blur_text2"
+                    >Pin Number</span
+                  >
+                </label>
+                <input
+                  id="pin"
+                  value="1414"
+                  type="number"
+                  placeholder="Enter 4 Digit Pin"
+                  class="input input-bordered bg-bg_color rounded-3xl"
+                  required
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button
+                  id="login_btn"
+                  class="btn btn-primary text-xl rounded-3xl bg-blue-600 border-none text-white"
+                >
+                  Withdraw Money
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
