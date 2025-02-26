@@ -44,3 +44,11 @@ A simple banking application for mobile created for practice, utilizing HTML, CS
   <img src="./web_pic/pic1.png" style="width: 48%; margin-right: 2%;">
   <img src="./web_pic/pic6.png" style="width: 48%; margin-left: 2%;">
 </div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="./web_pic/pic 4.png" style="width: 48%; margin-right: 2%;">
+  <img src="./web_pic/pic5.png" style="width: 48%; margin-left: 2%;">
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="./web_pic/pic2.png" style="width: 48%; margin-right: 2%;">
+  <img src="./web_pic/pic3.png" style="width: 48%; margin-left: 2%;">
+</div>
