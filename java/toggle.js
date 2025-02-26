@@ -20,3 +20,4 @@ clickHandler("btnCash", "tgCash");
 clickHandler("btnTransfer", "tgTransfer");
 clickHandler("btnBonus", "tgBonus");
 clickHandler("btnBill", "tgBill");
+clickHandler("btnTransaction", "tgTransaction");

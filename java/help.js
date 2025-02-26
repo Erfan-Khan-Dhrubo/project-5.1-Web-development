@@ -32,3 +32,19 @@ function toggleSection(id) {
   const visibleID = document.getElementById(id);
   visibleID.style.display = "block";
 }
+
+// Getting Time
+
+function showCurrentTime() {
+  // Create a new Date object
+  const now = new Date();
+
+  // Get the current date and time
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+
+  // Format the date and time
+  const dateTimeString = `Date: ${date}, Time: ${time}`;
+  console.log(dateTimeString);
+  return [date, time];
+}

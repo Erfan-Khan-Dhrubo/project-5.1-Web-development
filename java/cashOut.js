@@ -17,6 +17,7 @@ document
         const finalAmount = currentAmount - intAmount;
         settingValueInnerText("current_amount", finalAmount);
         settingValue("amount_cashOut", "");
+        Transactions(intAmount, "Cash Out");
       } else {
         alert("Pin does not match");
       }
