@@ -21,3 +21,14 @@ function settingValueInnerText(id, val) {
 function settingValue(id, val) {
   document.getElementById(id).value = val;
 }
+
+// toggle function
+
+function toggleSection(id) {
+  const divisions = document.querySelectorAll(".tgClass");
+  for (const i of divisions) {
+    i.style.display = "none";
+  }
+  const visibleID = document.getElementById(id);
+  visibleID.style.display = "block";
+}

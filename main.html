@@ -86,38 +86,44 @@
             Enjoy easy and convenient financial services with us. Cashout charge
             is low and
           </p>
-          <div class="grid grid-cols-3 gap-4">
+          <div id="btnCol" class="grid grid-cols-3 gap-4">
             <button
+              id="btnAdd"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/wallet1.png" alt="" />
               <p class="text-blur_text2">Add Money</p>
             </button>
             <button
+              id="btnCash"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/send1.png" alt="" />
               <p class="text-blur_text2">Cash Out</p>
             </button>
             <button
+              id="btnTransfer"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/money1.png" alt="" />
               <p class="text-blur_text2">Transfer Money</p>
             </button>
             <button
+              id="btnBonus"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/bonus1.png" alt="" />
               <p class="text-blur_text2">Get Bonus</p>
             </button>
             <button
+              id="btnBill"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/purse1.png" alt="" />
               <p class="text-blur_text2 font-outfit">Pay Bill</p>
             </button>
             <button
+              id="btnTransaction"
               class="flex flex-col justify-center items-center rounded-xl text-blur_text border-2 border-bor_cl py-6 hover:bg-bg_color"
             >
               <img src="assets/transaction1.png" alt="" />
@@ -129,7 +135,10 @@
 
       <main>
         <!-- Add Money Section -->
-        <section class="text-blur_text w-9/10 mx-auto py-12">
+        <section
+          id="tgAdd"
+          class="text-blur_text w-9/10 mx-auto py-12 tgClass hidden"
+        >
           <h2 class="font-bold text-xl py-4 text-blur_text3">Add Money</h2>
           <div class="card bg-base-100 shadow-2xl">
             <form class="card-body">
@@ -205,7 +214,10 @@
           </div>
         </section>
         <!-- Cash Out Section -->
-        <section class="text-blur_text w-9/10 mx-auto py-12">
+        <section
+          id="tgCash"
+          class="text-blur_text w-9/10 mx-auto py-12 tgClass hidden"
+        >
           <h2 class="font-bold text-xl py-4 text-blur_text3">Cash Out</h2>
           <div class="card bg-base-100 shadow-2xl">
             <form class="card-body">
@@ -266,7 +278,10 @@
         </section>
 
         <!-- Cash Transfer Money Section -->
-        <section class="text-blur_text w-9/10 mx-auto py-12">
+        <section
+          id="tgTransfer"
+          class="text-blur_text w-9/10 mx-auto py-12 tgClass hidden"
+        >
           <h2 class="font-bold text-xl py-4 text-blur_text3">Transfer Money</h2>
           <div class="card bg-base-100 shadow-2xl">
             <form class="card-body">
@@ -323,7 +338,10 @@
         </section>
 
         <!-- Get Bonus Section -->
-        <section class="text-blur_text w-9/10 mx-auto py-12">
+        <section
+          id="tgBonus"
+          class="text-blur_text w-9/10 mx-auto py-12 tgClass hidden"
+        >
           <h2 class="font-bold text-xl py-4 text-blur_text3">Get Bonus</h2>
           <div class="card bg-base-100 shadow-2xl">
             <form class="card-body">
@@ -351,7 +369,10 @@
         </section>
 
         <!-- Pay Bill Section -->
-        <section class="text-blur_text w-9/10 mx-auto py-12">
+        <section
+          id="tgBill"
+          class="text-blur_text w-9/10 mx-auto py-12 tgClass hidden"
+        >
           <h2 class="font-bold text-xl py-4 text-blur_text3">Pay Bill</h2>
           <div class="card bg-base-100 shadow-2xl">
             <form class="card-body">
@@ -425,5 +446,6 @@
     <script src="java/addMoney.js"></script>
     <script src="java/cashOut.js"></script>
     <script src="java/help.js"></script>
+    <script src="java/toggle.js"></script>
   </body>
 </html>
