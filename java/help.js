@@ -48,3 +48,10 @@ function showCurrentTime() {
   console.log(dateTimeString);
   return [date, time];
 }
+
+// Log out
+
+document.getElementById("signOut").addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "index.html";
+});

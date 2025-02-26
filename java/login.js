@@ -7,7 +7,6 @@ document
     const pinInt = parseInt(pin);
     if (mobileNum.length === 11) {
       if (pinInt === 1414) {
-        console.log("ho");
         window.location.href = "main.html";
       } else {
         alert("Your Password doesn't match");
