@@ -40,11 +40,17 @@ A simple banking application for mobile created for practice, utilizing HTML, CS
 
 ## A visual representation of my banking application.
 
-<div style="display: flex; flex-wrap: wrap; gap: 4%; justify-content: space-between;">
-  <img src="./web_pic/pic1.png" style="width: 48%;">
-  <img src="./web_pic/pic6.png" style="width: 48%;">
-  <img src="./web_pic/pic4.png" style="width: 48%;">
-  <img src="./web_pic/pic5.png" style="width: 48%;">
-  <img src="./web_pic/pic2.png" style="width: 48%;">
-  <img src="./web_pic/pic3.png" style="width: 48%;">
-</div>
+<table>
+  <tr>
+    <td style="vertical-align: top;"><img src="./web_pic/pic1.png" style="width: 100%;"></td>
+    <td style="vertical-align: top;"><img src="./web_pic/pic6.png" style="width: 100%;"></td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;"><img src="./web_pic/pic4.png" style="width: 100%;"></td>
+    <td style="vertical-align: top;"><img src="./web_pic/pic5.png" style="width: 100%;"></td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;"><img src="./web_pic/pic2.png" style="width: 100%;"></td>
+    <td style="vertical-align: top;"><img src="./web_pic/pic3.png" style="width: 100%;"></td>
+  </tr>
+</table>
