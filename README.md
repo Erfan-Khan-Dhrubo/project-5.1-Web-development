@@ -35,7 +35,7 @@ A simple banking application for mobile created for practice, utilizing HTML, CS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/simple-banking-app.git
+   git clone https://github.com/Erfan-Khan-Dhrubo/project-5.1-Web-development.git
    ```
 
 ## A visual representation of my banking application.
